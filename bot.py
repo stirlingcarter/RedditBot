@@ -4,9 +4,9 @@ import praw
 #bot constructor 
 bot = praw.Reddit(user_agent='bitcoin_analyzer_bot v0.1',
                   client_id='daK9d_j__n9Grg',
-                  client_secret='-NHpjhnETc0ey_o-36QdOJrnz00',
+                  client_secret='your_secret',
                   username='bitcoin_analyzer_bot',
-                  password='carterperez')
+                  password='your_password')
 
 #subreddit contructor 
 bitcoin_sub = bot.subreddit('all')
@@ -18,7 +18,7 @@ bitcoin_sub_comments = bitcoin_sub.stream.comments()
 #combs through stream
 for comment in bitcoin_sub_comments:
     text = comment.body
-    if "kendrick" in text:
+    if "example" in text:
             print(text)
             print("\n")
 	
