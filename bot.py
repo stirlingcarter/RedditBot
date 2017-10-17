@@ -2,10 +2,10 @@
 import praw 
 
 #bot constructor 
-bot = praw.Reddit(user_agent='bitcoin_analyzer_bot v0.1',
-                  client_id='daK9d_j__n9Grg',
+bot = praw.Reddit(user_agent='example_bot v0.1',
+                  client_id='your_id',
                   client_secret='your_secret',
-                  username='bitcoin_analyzer_bot',
+                  username='your_username',
                   password='your_password')
 
 #subreddit contructor 
